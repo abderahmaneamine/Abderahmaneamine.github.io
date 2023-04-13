@@ -332,3 +332,175 @@ color: #3B556D;
     background-color: #006F8F;
     
   }
+  /*respnsive*/
+/* Mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Adjust the font size of the navigation links */
+  .N li a {
+    font-size: 14px;
+  }
+
+  /* Make the navigation links stack on top of each other */
+  .N li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* Add padding to the navigation bar to prevent it from overlapping with the content */
+  header {
+    padding-top: 50px;
+  }
+      .text{
+        padding: 10px;
+      }
+      .text h2 {
+        font-size: 1.5em;
+      }
+      .text h4 {
+        font-size: 1em;
+      }
+      .text p {
+        font-size: 0.8em;
+      }
+  
+  .life {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .container {
+    margin: 10px;
+    width: 90%;
+  }
+  
+  .card__svg {
+    display: none;
+  }
+  
+  .card {
+    position: relative;
+    margin: 10px 0;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .card__image-container {
+    height: 200px;
+    background-image: url('path/to/mobile/image');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .card__content {
+    padding: 20px;
+  }
+  
+  .card__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card__line {
+    display: none;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .album img {
+    width: 100%;
+  }
+  .vidéos iframe {
+    width: 100%;
+    height: auto;
+  }
+  .form {
+    width: 100%;
+  }
+}
+  /*768PX*/
+
+  @media screen and (max-width: 768px) {
+    .form {
+      width: 100%;
+    }
+    .vidéos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .vidéos iframe {
+      width: 45%;
+      margin: 10px;
+    }
+    .album {
+      justify-content: flex-start;
+    }
+    
+    .album img {
+      max-width: 45%;
+    }
+    .life {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .container {
+      margin-bottom: 20px;
+    }
+    
+    .card__svg {
+      width: 100%;
+      height: auto;
+    }
+    
+    .card__content {
+      padding: 20px;
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+  }
+  .picture {
+      width: 100%;
+      text-align: center;
+  }
+  .picture img {
+      max-width: 100%;
+      height: auto;
+  }
+  .text {
+      width: 100%;
+      padding: 20px;
+  }
+  .text h2 {
+      font-size: 24px;
+  }
+  .text h4 {
+      font-size: 18px;
+  }
+  .text p {
+      font-size: 14px;
+  }
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  ul.N li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  }
+
+
+
+
+ 
